@@ -1,0 +1,130 @@
+.left-section
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 180px;
+    border-right: 1px solid rgb(230, 230, 230);
+    padding-top: 5px;
+    background-color: white;
+    z-index: 3;
+}
+.left-section .icon-box
+{
+    height: 48px;
+    width: 48px;
+    border-radius: 25px;
+    margin-bottom: 3px;
+    margin-left: 110px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+.left-section .icon-box:hover
+{
+    background-color: rgb(240, 240, 250);
+}
+.left-section .icon-box:hover .left_section_tooltip
+{
+    opacity: 1;
+}
+.left_section_tooltip
+{
+    position: absolute;
+    bottom: -30px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+    white-space: nowrap;
+    z-index: 3;
+}
+.icons
+{
+    height: 24px;
+}
+.tweet-icon
+{
+    height: 26px;
+}
+.icon-tweet-box
+{
+    height: 52px;
+    width: 52px;
+    border-radius: 35px;
+    background-color: rgb(50,150,250);
+    margin-top: 10px;
+    margin-left: 107px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background-color 0.15s, opacity 0.5s;
+    cursor: pointer;
+}
+.icon-tweet-box:hover
+{
+    background-color: rgb(20,120,220);
+}
+.icon-tweet-box:hover .left_section_tooltip
+{
+    opacity: 1;
+}
+.email-box
+{
+    height: 65px;
+    width: 65px;
+    border-radius: 33px;
+    margin-top: 60px;
+    margin-left: 103px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transition:background-color 0.15s,opacity 0.5s;
+}
+.email-box:hover
+{
+    background-color: darkgray;
+}
+.email-box:hover .left_section_tooltip_account
+{
+    opacity: 1;
+}
+.left_section_tooltip_account
+{
+    position: absolute;
+    top: -30px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+}
+.email-button
+{
+    background-color: brown;
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}

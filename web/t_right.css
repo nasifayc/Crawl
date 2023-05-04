@@ -1,0 +1,352 @@
+@media (min-width:1000.02px) 
+{
+    .overlay
+{
+    position:fixed;
+    width: 480px;
+    right: 0;
+    top: 0;
+    height: 60px;
+    background-color:rgb(255,255,255);
+    z-index: 1;
+}
+.search-bar
+{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 8px;
+    right: 100px;
+    background-color: rgb(240, 240, 250);
+    border-radius: 25px;
+    overflow: hidden;
+}
+.search-icon-button
+{
+    padding: 12px 20px;
+    border: none;
+    background-color: rgb(240, 240, 250);
+}
+.search-icon-button img
+{
+    height: 16px;
+}
+.search-bar-holder
+{
+  font-size: 15px;
+  padding: 12px 0px;
+  border: none;
+  background-color: rgb(240, 240, 250);
+  width: 250px;
+}
+.right-section-contet
+{
+    position: absolute;
+    top: 70px;
+    right:100px;
+    background-color:rgb(240, 240, 250);
+    width: 348px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.right-section-heading
+{
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.trending-news
+{
+    display: flex;
+    position: relative;
+    padding: 15px;
+    padding-bottom: 10px;
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+.trending-news:hover
+{
+    background-color: rgb(234, 234, 234);
+}
+.trend-info-box
+{
+    flex: 1;
+}
+.trend-title
+{
+    font-size: 14px;
+    color: rgb(120, 120, 120);
+    margin-bottom: 3px;
+}
+.trend-owner
+{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.more-info-img
+{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.more-info-icon-box
+{
+    padding: 8px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    transition: background-color 0.15s;
+}
+.more-info-icon-box:hover
+{
+    background-color: rgba(50,150,200,0.3);
+}
+.more_info_tooltip
+{
+    position: absolute;
+    bottom: -25px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s;
+    white-space: nowrap;
+    z-index: 3;
+}
+.more-info-icon-box:hover .more_info_tooltip
+{
+    opacity: 1;
+}
+.more-info img
+{
+    height: 18px;
+}
+.trend-tweets
+{
+    font-size: 14px;
+    color: rgb(120, 120, 120);
+}
+.show-more-box
+{
+    display: flex;
+    padding: 20px 15px;
+    align-items: center;
+    transition:  background-color 0.15s;
+    cursor: pointer;
+}
+.show-more-box:hover
+{
+    background-color: rgb(234, 234, 234)
+}
+.show-more-text
+{
+    text-decoration: none;
+    color: rgb(50,150,200);
+}
+.show-more-text:hover
+{
+    opacity: 0.6;
+}
+.who-to-follow-container
+{
+   width:348px;
+   position: absolute;
+   top: 620px;
+   right: 100px;
+   border-radius: 15px;
+   background-color: rgb(240,240,250);
+   overflow: hidden;
+}
+.who-to-follow-container h1
+{
+    margin-left: 15px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight:900;
+}
+.people-suggestion-box
+{
+    display: flex;
+    padding: 15px;
+    cursor: pointer;
+}
+.people-suggestion-box:hover
+{
+    background-color: rgb(234,234,234);
+}
+.suggestion-profile img
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.s-name-and-address-box
+{
+   padding: 6px 10px;
+}
+.s-name
+{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.s-user-name
+{
+    font-size: 14px;
+    color: rgb(99, 99, 99);
+}
+.follow-request-box
+{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: end;
+}
+.follow-request-box button
+{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+}
+@media (min-width: 900px) and (max-width:1000px) 
+{
+    .news img
+    {
+        max-width: 404px;
+    }
+    .overlay,.right-section-contet,.search-bar,.more-info-img
+    ,.who-to-follow-container,.suggestion-profile img
+    {
+        width: 0;
+        height: 0;
+    }
+    .header
+    {
+        right: 100px;
+        left: 90px;
+        min-width: 558px;
+    }
+    .tweet-container,.several-news-holder
+    {
+        margin-left: -180px;
+        margin-right: -380px;
+    }
+    .left-section
+    {
+        width: 90px;
+    }
+    .left-section .icon-box,
+    .icon-tweet-box,.email-box
+    {
+        margin-left: 30px;
+    }
+    .main-section
+    {
+        margin-left: 90px;
+    }
+    .who-to-follow-container h1,.right-section-heading
+    {
+        opacity: 0;
+    }
+}
+@media (min-width:1000.02px) and (max-width:1200px) {
+    .news img
+    {
+        max-width: 304px;
+    }
+    .header
+    {
+        right: 480px;
+        left: 90px;
+        min-width: 558px;
+    }
+    .tweet-container,.several-news-holder
+    {
+        margin-left: -180px;
+        margin-right: -380px;
+    }
+    .twitter-news-container
+{
+    margin-right: 370px;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.15s;
+    background-color: white;
+}
+    .left-section
+    {
+        width: 90px;
+    }
+    .left-section .icon-box,
+    .icon-tweet-box,.email-box
+    {
+        margin-left: 30px;
+    }
+    .main-section
+    {
+        margin-left: 90px;
+    }
+    
+}
+@media (max-width:900.02px) 
+{
+    .overlay,.right-section-contet,.search-bar,.more-info-img
+    ,.who-to-follow-container,.suggestion-profile img
+    {
+        width: 0;
+        height: 0;
+    }
+    .header
+    {
+        right: 100px;
+        left: 90px;
+        min-width: 558px;
+    }
+    .tweet-container,.several-news-holder
+    {
+        margin-left: -180px;
+        margin-right: -380px;
+    }
+    .left-section
+    {
+        width: 90px;
+    }
+    .left-section .icon-box,
+    .icon-tweet-box,.email-box
+    {
+        margin-left: 30px;
+    }
+    .main-section
+    {
+        margin-left: 90px;
+    }
+    .who-to-follow-container h1,.right-section-heading
+    {
+        opacity: 0;
+    }
+    .news img
+    {
+        max-width: 404px;
+    }
+}

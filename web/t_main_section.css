@@ -1,0 +1,314 @@
+.main-section
+{
+    position: absolute;
+    top: 105px;
+    bottom: 480px;
+    left: 180px;
+    right:480px;
+}
+.tweet-container
+{
+    height: 121px;
+    border: 1px solid rgb(230, 230, 230);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    display: flex;
+    background-color: white;
+}
+.user-profile-box
+{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 13px;
+}
+.user-profile
+{
+    height: 48px;
+    width: 48px;
+    border-radius: 25px;
+    background-color: rgb(203, 62, 62);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.15s,color 0.15s;
+}
+.user-profile:hover
+{
+    background-color: rgb(169, 48, 48);
+    color: lightgray;
+}
+.tweet-here input
+{
+    margin-top: 24px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+}
+.tweet-options
+{
+    display: flex;
+    position: absolute;
+    top: 71px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+}
+.tweet-formats
+{
+    width: 50%;
+    display: flex;
+    padding-left: 70px;
+}
+.tweet-formats-div
+{
+    height: 16px;
+    padding: 10px;
+    margin-right: 1px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tweet-formats-div:hover
+{
+    background-color: rgba(50,150,200,0.3);
+}
+.twitter_formats_tooltip
+{
+    position: absolute;
+    bottom: -30px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+    white-space: nowrap;
+    z-index: 3;
+}
+.tweet-formats div:hover .twitter_formats_tooltip
+{
+    opacity: 1;
+}
+.icon1
+{
+    height: 16px;
+}
+.send-tweet
+{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+}
+.send-tweet button
+{
+    margin: 0;
+    padding: 9px 15px;
+    padding-left:17px;
+    padding-top: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(50,150,200,0.5);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.several-news-holder
+{
+    position: absolute;
+    top: 121px;
+    left: 0;
+    right: 0;
+    border-right: 1px solid rgb(230,230,230);
+    border-top: 1px solid rgb(230,230,230);
+    padding-bottom: 40px;
+
+}
+.twitter-news-container
+{
+    padding: 15px;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.15s;
+    background-color: white;
+}
+.twitter-news-container:hover
+{
+    background-color: rgb(240, 240, 240);
+}
+.twitter-profile-box
+{
+    padding-right: 13px;
+}
+.twitter-profile-box img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.twitter-profile-box img:hover
+{
+    opacity: 0.756;
+}
+.news-container-author-box
+{
+    display: flex;
+    margin-bottom: 6px;
+}
+.author-name
+{
+    font-weight: bold;
+    cursor: pointer;
+}
+.author-name:hover
+{
+    text-decoration: underline;
+}
+.auther-user-name
+{
+    color: rgb(105, 105, 105);
+}
+.post-status
+{
+    cursor: pointer;
+}
+.post-status:hover
+{
+    text-decoration: underline;
+}
+.news-discription
+{
+    color: rgb(73, 73, 73);
+    margin-bottom: 10px;
+}
+.news img
+{
+    width: 480px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.interact-container
+{
+    display: flex;
+    padding-top: 10px;
+}
+.interact-formats-and-numbers-comment,.interact-formats-and-numbers-retweet
+,.interact-formats-and-numbers-likes,.interact-formats-and-numbers-view,.interact-formats-and-numbers-share
+{
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    position: relative;
+}
+.interact-formats-and-numbers-comment:hover .interact-formats
+{
+    background-color: rgba(73,80,200,0.4);
+}
+.interact-formats-and-numbers-comment:hover .interact-count
+{
+    color: rgb(73,80,200);
+}
+.interact-formats-and-numbers-retweet:hover .interact-formats
+{
+    background-color: rgba(32,160,70,0.4);
+}
+.interact-formats-and-numbers-retweet:hover .interact-count
+{
+    color: rgb(32,160,70);
+}
+.interact-formats-and-numbers-likes:hover .interact-formats
+{
+    background-color: rgba(255, 132, 132,0.4);
+}
+.interact-formats-and-numbers-likes:hover .interact-count
+{
+    color: rgb(255,132,132);
+}
+.interact-formats-and-numbers-view:hover .interact-formats
+{
+    background-color: rgba(0,128,128,0.4);
+}
+.interact-formats-and-numbers-view:hover .interact-count
+{
+    color: teal;
+}
+.interact-formats-and-numbers-share:hover .interact-formats
+{
+    background-color: rgba(30,30,200,0.2);
+}
+.interact-formats
+{
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+.interact-count
+{
+margin-left: 10px;
+}
+.interact-formats img
+{
+    height: 18px;
+}
+.interact-tooltips
+{
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 5px 5px;
+
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    z-index: 5;
+
+    border-radius: 2px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s;
+}
+.interact-formats-and-numbers-comment:hover .interact-tooltips
+{
+    opacity: 1;
+}
+.interact-formats-and-numbers-retweet:hover .interact-tooltips
+{
+    opacity: 1;
+}
+.interact-formats-and-numbers-likes:hover .interact-tooltips
+{
+    opacity: 1;
+}
+.interact-formats-and-numbers-view:hover .interact-tooltips
+{
+    opacity: 1;
+}
+.interact-formats-and-numbers-share:hover .interact-tooltips
+{
+    opacity: 1;
+}

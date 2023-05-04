@@ -1,0 +1,70 @@
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 180px;
+    right: 480px;
+    border: 1px solid rgb(230, 230, 230);
+    height: 105px;
+    z-index: 2;
+    background-color: rgba(255, 255, 255,0.5);
+    backdrop-filter: blur(15px);
+    
+}
+.home
+{
+    font-size: 20px;
+    margin-left: 17px;
+    margin-top: 15px;
+    font-weight: bold;
+    position: absolute;
+}
+.header-suggestion-box
+{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 70px;
+    flex-shrink: 0;
+
+}
+.fyp-box
+{
+    display: flex;
+    flex-direction: column;
+}
+.fyp-box:hover,.following-box:hover
+{
+    background-color: lightgray;
+    color: black;
+}
+.fyp-box,.following-box
+{
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+.fyp-active
+{
+    background-color: rgb(50,150,200);
+    height: 4px;
+    border-radius: 2px;
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+}
+.following-box
+{
+    color: darkgray;
+}
+
