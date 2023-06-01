@@ -1,0 +1,73 @@
+body{
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: Arial;
+  padding-left: 20%;
+}
+.gameTitle{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.playermoves{
+  padding: 32px;
+  border: 3px solid white;
+  background-color: transparent;
+  border-radius: 60px;
+  margin-right: 6px;
+  margin-left: 2px;
+  cursor: pointer;
+  transition:background-color 0.2s;
+}
+.playermoves:hover{
+  background-color: rgb(62, 62, 62);
+}
+.icons{
+  width: 50px;
+}
+.resultCss{
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.scoreCss{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 60px;
+}
+.resetbuttonCss,.autoPlayButton{
+  font-size: 18px;
+  padding: 6px 10px;
+  background-color: white;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.reset-conformation{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 425px;
+  background-color: rgb(81, 81, 81);
+  margin-top: 20px;
+  border-radius: 20px;
+}
+#yesButton,#noButton{
+  background-color:white;
+  margin-right: 10px;
+  padding:10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#yesButton:hover{
+  background-color: rgb(223, 223, 223);
+}
+#noButton:hover{
+  background-color: rgb(223, 223, 223);
+}
+#conformatonText{
+  margin-right: 10px;
+  margin-left: 10px;
+}
