@@ -79,6 +79,7 @@ p{
   background-color: antiquewhite;
   color: black;
 }
+/*------------------------ Making it a little responsive ---------------------- */
 @media (max-width: 700px) {
   #timerBox{
     padding: 20px;
